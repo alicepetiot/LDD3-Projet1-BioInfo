@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        body 
+        {
+            background-color: rgb(49,51,72);
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+
+        .mainBlock
+        {
+            text-align: center;
+        }
+
+        input{color:white;}
+
+        /*input[type=text] 
+        {
+            padding: 10px;
+            margin:10px 0;
+            border: 0;
+            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+            border-radius:10px;
+        }*/
+
+        /*input[type="submit"]
+        {
+            padding: 10px;
+            margin:10px 0;
+            border: 0;
+            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+            border-radius:10px;
+        }*/
+    </style>
+
+</head>
+
+
+<body>
+
+  <!-- Le "main" de la page -->
+
+  <h1 style="text-align: center;">Formulaire avancé</h1>
+  <hr/>
+
+  <div class="mainBlock">
+    <form method="post" action="q3.php">
+    <!--
+    <span>Accession a trouver :</span>
+    <input type="text" name="accession" placeholder="NumAccess..">
+    </input> <br>
+    -->
+    <br<br><br>
+    <div class="row" style="width:40%;">
+        <form class="col s12">
+            <span>Présence d’une chaîne dans l’un des noms du gène (optionel) :</span>
+            <div class="row">
+                <div class="input-field col s12">
+                <input name="nameInGene" id="last_name" type="text" class="validate">
+                <label for="last_name">mot clé dans gène ... </label>
+                </div>
+            </div>
+            <span>Présence d’une chaîne dans l’un des noms de la proteine (optionel) :</span>
+            <div class="row">
+                <div class="input-field col s12">
+                <input name="nameInProtein" id="last_name" type="text" class="validate">
+                <label for="last_name">mot clé dans protéine ... </label>
+                </div>
+            </div>
+            <span>Présence d’une chaîne dans l’un des commentaires (optionel) :</span>
+            <div class="row">
+                <div class="input-field col s12">
+                <input name="nameInComment" id="last_name" type="text" class="validate">
+                <label for="last_name">mot clé dans commentaires ... </label>
+                </div>
+            </div>
+            <input type="submit" name="submit" 
+            value="envoyer" class="waves-effect waves-light btn" style="background-color: rgb(37,38,54);">
+            </input>
+        </form>
+    </div>
+    
+  </div>
+
+  <!-- https://ssh1.pgip.universite-paris-saclay.fr/~tmanea/www/q2main.php?accession=P51787 -->
+  
+
+</body>
+
+</html>
